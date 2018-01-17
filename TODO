@@ -1,0 +1,14 @@
+Parser limitation: load file -- modify parser to load whole files, 
+rather than line-by-line
+
+Implement separate display precision
+
+Parse and display octal and binary
+
+Completion requires at least one letter of the function/argument to be 
+entered -- we can get a complete list of all possibilities, except at 
+the start of the line.
+
+Plotting is very crude
+
+Note plots -- red, green, blue

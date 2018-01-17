@@ -1,0 +1,39 @@
+Commands: quit, exit
+Variables: ans (deflt 0)
+
+set
+  mode -- raw, default, sci, eng, hex
+    eng -- force to an exponent which is a multiple of 3, with prefixes for common values
+    raw -- unprocessed output of the BigInteger->string conversion
+Note that in all modes except "raw," trailing zeros and any trailing decimal
+point are removed from decimal numbers.
+     default -- sci when order > scibreak
+     sci -- scientific always
+     hex -- hexadecimal, unless number has a fraction, in which case default
+
+  scibreak -- order of magnitude beyond which scientific notation will be used
+    in default disp mode
+
+  precision -- number of sig figs used in calculations (default 30)
+
+Variables
+
+twopi=2*pi
+foo=bar=2
+
+
+Defining functions
+double:2*arg0
+
+Arguments are numbered arg0, arg1, etc. There is no way for a function to
+reject calls with the wrong number of arguments -- a run-time error will
+be raised if the function uses and argN variable that was never supplied.
+These argument variables are local to the function -- no symbols are defined.
+
+
+
+
+
+
+
+
